@@ -7,11 +7,12 @@ module.exports = function Quest() {
       <form>
         <h1> Вперед!</h1>
         <div className="mb-3">
-          <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
+          <label htmlFor="exampleFormControlInput1" className="form-label">???</label>
         </div>
         <div className="mb-3">
           <label htmlFor="exampleFormControlTextarea1" className="form-label">Твой ответ</label>
           <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" />
+          <button className="enter-answer">Отправить</button>
         </div>
       </form>
     </Layout>
