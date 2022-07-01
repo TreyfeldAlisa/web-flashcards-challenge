@@ -4,8 +4,15 @@ require('@babel/register');
 const app = express();
 
 const mainRout = require('./routs/home');
+const themeRout = require('./routs/theme');
+const questRout = require('./routs/quest');
 
 app.use('/', mainRout);
+app.use(express.static('public'));
+
+// потом удаоить!!!!
+app.use('/', themeRout);
+app.use('/', questRout);
 
 app.listen(3000, () => {
   console.log('Сервер шуршит шуршанками мой повелитель, порт: 3000');
