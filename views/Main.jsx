@@ -11,7 +11,7 @@ module.exports = function Main() {
           <label htmlFor="exampleInputPassword1" className="form-label">Для начала впиши своё имя</label>
           <input type="text" className="player" id="player" />
         </div>
-        <button type="submit" className="btn btn-primary">Играть!</button>
+        <button type="submit" className="btn btn-primary"><a href='http://localhost:3000/theme' >Играть!</a></button>
       </form>
     </Layout>
   );

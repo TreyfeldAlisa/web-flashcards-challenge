@@ -1,5 +1,5 @@
 document.userName.addEventListener('submit', async (event) => {
-  console.log(1234567);
+  // console.log(1234567);
   event.preventDefault();
   const userName = event.target.player.value;
   // console.log(userName);
@@ -8,7 +8,9 @@ document.userName.addEventListener('submit', async (event) => {
     body: JSON.stringify({ userName }),
     headers: { 'Content-Type': 'application/json' },
   });
-  if (res.status === 'ok') {
-    window.location.href = '/themes';
-  }
+  // if (res.status === 'ok') {
+    // await
+  window.location.href = '/theme';
+  // }
 });
+ 

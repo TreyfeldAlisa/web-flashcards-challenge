@@ -19,12 +19,12 @@ mainRout.get('/home', (req, res) => {
 });
 
 mainRout.post('/user', async (req, res) => {
-  try{
-  const userName = req.body.userName;
-  await User.create({ name: userName });
-  res.json({ status: 'ok' });
-  }catch(error){
-    res.status(500).json({error: error.message});
+  try {
+    const { userName } = req.body;
+    await User.create({ name: userName });
+    res.json({ status: 'ok' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
   }
 });
 
