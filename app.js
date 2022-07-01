@@ -5,6 +5,10 @@ const app = express();
 
 const mainRout = require('./routs/home');
 
+app.use(express.urlencoded({ extender: true }));
+app.use(express.json());
+app.use(express.static('public'));
+
 app.use('/', mainRout);
 
 app.listen(3000, () => {

@@ -4,7 +4,7 @@ const Layout = require('./Layout');
 module.exports = function Main() {
   return (
     <Layout>
-      <form>
+      <form name="userName">
         <h1> Весёлые картинки!</h1>
         <div className="container-lg">
           <label htmlFor="exampleInputPassword1" className="form-label">Для начала впиши своё имя</label>

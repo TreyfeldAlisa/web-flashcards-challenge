@@ -9,7 +9,7 @@ module.exports = function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/public/stylesheets/main.css" />
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-        <script src="../routs/home.js" defer />
+        <script src="/js/client.js" defer />
         <title>Веселые картинки!</title>
       </head>
       <body>
