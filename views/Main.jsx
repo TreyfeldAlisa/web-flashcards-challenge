@@ -5,11 +5,12 @@ module.exports = function Main() {
   return (
     <Layout>
       <form>
-        <div className="mb-3">
-          <label htmlFor="exampleInputPassword1" className="form-label">Type your Name</label>
-          <input type="password" className="form-control" id="exampleInputPassword1" />
+        <h1> Весёлые картинки!</h1>
+        <div className="container-lg">
+          <label htmlFor="exampleInputPassword1" className="form-label">Для начала впиши своё имя</label>
+          <input type="text" className="player" id="player" />
         </div>
-        <button type="submit" className="btn btn-primary">Play!</button>
+        <button type="submit" className="btn btn-primary">Играть!</button>
       </form>
     </Layout>
   );
