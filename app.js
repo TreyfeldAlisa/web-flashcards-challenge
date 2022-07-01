@@ -5,7 +5,7 @@ const app = express();
 
 const mainRout = require('./routs/home');
 const themeRout = require('./routs/theme');
-const questRout = require('./routs/quest');
+const questRout = require('./routs/quest', './routs/quest/1');
 
 app.use(express.urlencoded({ extender: true }));
 app.use(express.json());
