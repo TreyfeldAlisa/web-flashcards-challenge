@@ -3,6 +3,7 @@ h1{
 }
 body{
   background-color:beige; 
+  font-family: 'Montserrat Alternates', sans-serif;
   display: flex;
   flex-direction:row-reverse;
   align-content: flex-end;
@@ -10,7 +11,18 @@ body{
   margin-top: 40px;
   margin-left: 20px;
 }
-.btn{
-display: flex;
-
+.userName{
+  display: flex;
+}
+.themes{
+  display: flex;
+}
+.btntema1{
+  background-color:lavender
+}
+.btntema2{
+  background-color:lightpink
+}
+.btntema3{
+  background-color:lightskyblue
 }
