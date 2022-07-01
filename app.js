@@ -7,6 +7,10 @@ const mainRout = require('./routs/home');
 const themeRout = require('./routs/theme');
 const questRout = require('./routs/quest');
 
+app.use(express.urlencoded({ extender: true }));
+app.use(express.json());
+app.use(express.static('public'));
+
 app.use('/', mainRout);
 app.use(express.static('public'));
 

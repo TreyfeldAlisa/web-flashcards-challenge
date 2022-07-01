@@ -5,7 +5,7 @@ const Layout = require('./Layout');
 module.exports = function Main() {
   return (
     <Layout>
-      <form className="userName">
+      <form name="userName" className="userName">
         <h1> Весёлые картинки!</h1>
         <div className="container-lg">
           <label htmlFor="exampleInputPassword1" className="form-label">Для начала впиши своё имя</label>
@@ -13,7 +13,7 @@ module.exports = function Main() {
           <input type="text" className="player" id="player" />
         </div>
         <br/>
-        <button type="submit" className="btn btn-primary">Играть!</button>
+        <button type="submit" className="btn btn-primary">Играть!<a href='http://localhost:3000/theme' ></a></button>
       </form>
     </Layout>
   );

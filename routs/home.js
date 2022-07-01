@@ -3,6 +3,7 @@ const ReactDOMServer = require('react-dom/server');
 const React = require('react');
 
 const Main = require('../views/Main');
+const { User } = require('../db/models');
 
 const mainRout = express.Router();
 
@@ -16,4 +17,15 @@ mainRout.get('/home', (req, res) => {
   res.write('<!DOCTYPE html>');
   res.end(html);
 });
+
+mainRout.post('/user', async (req, res) => {
+  try {
+    const { userName } = req.body;
+    await User.create({ name: userName });
+    res.json({ status: 'ok' });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
 module.exports = mainRout;
